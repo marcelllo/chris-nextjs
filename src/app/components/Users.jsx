@@ -1,5 +1,5 @@
 export default async function Users() {
-    const response = await fetch('http://localhost:3000/api/users');
+    const response = await fetch(`${process.env.BASE_URL}/api/users`);
     const users = await response.json();
     return (
         <>
