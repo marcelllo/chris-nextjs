@@ -1,6 +1,7 @@
 export default async function Users() {
-    const response = await fetch(`${process.env.BASE_URL}/api/users`);
-    const users = await response.json();
+    // const response = await fetch(`${process.env.BASE_URL}/api/users`);
+    // const users = await response.json();
+    const users = [];
     return (
         <>
             <h1>Users</h1>
